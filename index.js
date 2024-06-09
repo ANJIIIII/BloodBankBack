@@ -33,11 +33,11 @@ app.use("/api/v1/analytics", require("./routes/analyticsroute"));
 app.use("/api/v1/admin", require("./routes/adminroutes"));
 // app.use("/api/v1/auth", require("./routes/authroute"));
 
-app.use(express.static(path.join(__dirname,'./client/build')))
+// app.use(express.static(path.join(__dirname,'./client/build')))
 
-app.get('*',function(req,res){
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+// app.get('*',function(req,res){
+//     res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 
 app.listen(PORT,()=>{
